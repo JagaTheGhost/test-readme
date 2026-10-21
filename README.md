@@ -1,5 +1,3 @@
-
-
 # visualmark-studio
 
 > **Modern Code + Visual Desktop IDE for Markdown authoring, Mermaid diagramming, and complete documentation suites.**
