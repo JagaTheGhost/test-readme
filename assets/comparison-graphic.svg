@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 240" width="900" height="240">
+  <defs>
+    <linearGradient id="hudTitleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#4f46e5"/>
+    </linearGradient>
+    <radialGradient id="hudGlow" cx="50%" cy="25%" r="75%">
+      <stop offset="0%" stop-color="#4f46e5" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#0a0f1d" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="hudGrid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M 24 0 L 0 0 0 24" fill="none" stroke="#ffffff" stroke-opacity="0.035" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <!-- Base Background -->
+  <rect width="900" height="240" rx="8" fill="#0a0f1d"/>
+  <rect width="900" height="240" rx="8" fill="url(#hudGrid)"/>
+  <rect width="900" height="240" rx="8" fill="url(#hudGlow)"/>
+  <rect width="898" height="238" x="1" y="1" rx="8" fill="none" stroke="#1e293b" stroke-width="1"/>
+  <!-- Corner Reticle Brackets -->
+  <path d="M 12 24 L 12 12 L 24 12" fill="none" stroke="#4f46e5" stroke-width="2"/>
+  <path d="M 888 24 L 888 12 L 876 12" fill="none" stroke="#4f46e5" stroke-width="2"/>
+  <path d="M 12 216 L 12 228 L 24 228" fill="none" stroke="#4f46e5" stroke-width="2"/>
+  <path d="M 888 216 L 888 228 L 876 228" fill="none" stroke="#4f46e5" stroke-width="2"/>
+  <!-- Top Telemetry Status Header -->
+  <circle cx="44" cy="36" r="4" fill="#10b981"/>
+  <circle cx="44" cy="36" r="8" fill="#10b981" fill-opacity="0.25"/>
+  <text x="58" y="40" fill="#10b981" font-family="'JetBrains Mono',ui-monospace,monospace" font-size="10" font-weight="700" letter-spacing="1.5">SYSTEM NOMINAL</text>
+  <rect x="740" y="26" width="116" height="20" rx="3" fill="#ffffff" fill-opacity="0.05" stroke="#334155" stroke-width="1"/>
+  <text x="798" y="40" fill="#94a3b8" font-family="'JetBrains Mono',ui-monospace,monospace" font-size="10" font-weight="600" text-anchor="middle">v2.4.0</text>
+  <!-- Title & Subtitle -->
+  <text x="40" y="102" fill="url(#hudTitleGrad)" font-family="'Space Grotesk',-apple-system,sans-serif" font-size="38" font-weight="800" letter-spacing="-0.5">README Studio</text>
+  <text x="40" y="138" fill="#94a3b8" font-family="'Plus Jakarta Sans',-apple-system,sans-serif" font-size="15" font-weight="400">State-of-the-Art Markdown Documentation Platform</text>
+  <!-- Hairline divider -->
+  <line x1="40" y1="168" x2="860" y2="168" stroke="#1e293b" stroke-width="1"/>
+  <!-- Telemetry Coordinate Metrics -->
+  <g transform="translate(40, 188)">
+    <rect width="180" height="26" rx="4" fill="#ffffff" fill-opacity="0.04" stroke="#4f46e5" stroke-opacity="0.3" stroke-width="1"/>
+    <text x="90" y="17" fill="#38bdf8" font-family="'JetBrains Mono',monospace" font-size="10.5" font-weight="600" text-anchor="middle">CPU: 12% // 4.8GHz</text>
+  </g>
+  <g transform="translate(230, 188)">
+    <rect width="180" height="26" rx="4" fill="#ffffff" fill-opacity="0.04" stroke="#db2777" stroke-opacity="0.3" stroke-width="1"/>
+    <text x="90" y="17" fill="#a78bfa" font-family="'JetBrains Mono',monospace" font-size="10.5" font-weight="600" text-anchor="middle">MEM: 1.4GB / 32GB</text>
+  </g>
+  <g transform="translate(420, 188)">
+    <rect width="210" height="26" rx="4" fill="#ffffff" fill-opacity="0.04" stroke="#10b981" stroke-opacity="0.3" stroke-width="1"/>
+    <text x="105" y="17" fill="#34d399" font-family="'JetBrains Mono',monospace" font-size="10.5" font-weight="600" text-anchor="middle">STATUS: ENCLAVE_SECURE</text>
+  </g>
+</svg>
